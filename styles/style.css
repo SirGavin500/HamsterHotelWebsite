@@ -1,0 +1,147 @@
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.header-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.transparentbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 3, 36, 0.8);
+  padding: 60px 120px;
+  text-align: center;
+  color: white;
+  max-width: 90%;
+}
+
+.headertext {
+  font-size: 30px;
+}
+
+/* Welcome Section */
+.hamster-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.award-img {
+  max-width: 70px;
+}
+
+/* Room Cards */
+.section-bg {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.room-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Packages */
+.package-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Amenities */
+.amenity-img {
+  width: 150px;
+}
+.amenity-img-small {
+  width: 100px;
+}
+
+/* Reserve Section */
+.reserve-input .input-box {
+  width: 180px;
+  height: 35px;
+  background-color: #192a56;
+  border-radius: 5px;
+}
+
+.reserve-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .section-bg { height: 900px; }
+}
+
+@media (max-width: 992px) {
+  /* Navbar */
+  #navbarLeft,
+  #navbarRight {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .transparentbox { padding: 40px 30px; }
+  .headertext { font-size: 22px; }
+
+  /* Welcome Section */
+  .hamster-heading { text-align: center; font-size: 1.8rem; }
+  .award-img { margin: 5px; }
+
+  /* Room Cards */
+  .room-cards-container { padding-top: 80px; padding-bottom: 80px; }
+  .room-card h1 { font-size: 1.5rem; }
+  .room-card h5 { font-size: 1rem; }
+
+  /* Packages Section */
+  .packages-section .row { flex-direction: column !important; text-align: center; }
+  .packages-section img { margin-bottom: 15px; }
+
+  /* Amenities */
+  .amenity-img, .amenity-img-small { width: 100px; }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .transparentbox { padding: 20px; }
+  .headertext { font-size: 18px; }
+
+  /* Reserve Section */
+  .reserve-inputs {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .reserve-input .input-box { width: 100% !important; }
+  .reserve-btn { width: 100%; margin-top: 15px; }
+
+  /* Room Cards Background */
+  .section-bg { height: 1200px; }
+
+  /* Room Cards Titles */
+  .room-card h1 { font-size: 1.3rem; }
+  .room-card h5 { font-size: 0.95rem; }
+
+  /* Packages Titles */
+  .packages-section h3 { font-size: 1.4rem; }
+}
+
+@media (max-width: 576px) {
+  /* Small mobile tweaks */
+  .section-bg { height: 1400px; }
+  .hamster-heading { font-size: 1.5rem; }
+  .reserve-section { margin: 20px 10px; }
+}
