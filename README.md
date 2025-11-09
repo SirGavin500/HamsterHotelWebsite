@@ -8,4 +8,4 @@
 
  // I used chatgbt to help me understand where the responsiveness breakpoints should be added.
 
-// Person who Peer Reviewed your assignment
+// Kel - works great, good responsiveness, matches site completely
